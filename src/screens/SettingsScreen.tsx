@@ -1,7 +1,11 @@
+// Imports React Native UI components
 import { Button, StyleSheet, Text, View } from "react-native";
+
+// Imports dark mode state and toggle function
 import { useThemeMode } from "../hooks/useThemeMode";
 
 export default function SettingsScreen() {
+    // Gets current dark mode value and the function to switch theme
     const { isDarkMode, toggleTheme } = useThemeMode();
 
     return (
@@ -20,6 +24,7 @@ export default function SettingsScreen() {
                 Settings / About
             </Text>
 
+            {/* Card for dark mode setting */}
             <View
                 style={[
                     styles.card,
@@ -44,12 +49,14 @@ export default function SettingsScreen() {
                     Current mode: {isDarkMode ? "Dark" : "Light"}
                 </Text>
 
+                {/* Button changes between dark and light mode */}
                 <Button
                     title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
                     onPress={toggleTheme}
                 />
             </View>
 
+            {/* Card with app description */}
             <View
                 style={[
                     styles.card,
@@ -75,6 +82,7 @@ export default function SettingsScreen() {
                 </Text>
             </View>
 
+            {/* Card showing project requirements */}
             <View
                 style={[
                     styles.card,
@@ -105,12 +113,14 @@ export default function SettingsScreen() {
 }
 
 const styles = StyleSheet.create({
+    // Light mode screen background
     container: {
         flex: 1,
         padding: 20,
         backgroundColor: "#f7f7f7",
     },
 
+    // Dark mode screen background
     darkContainer: {
         backgroundColor: "#111827",
     },

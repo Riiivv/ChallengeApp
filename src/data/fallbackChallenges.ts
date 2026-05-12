@@ -1,5 +1,7 @@
+// Imports the Challenge type so every fallback challenge has the correct structure
 import { Challenge } from "../types/Challenge";
 
+// Local backup data used if the API does not work
 export const fallbackChallenges: Challenge[] = [
     {
         id: "1",
