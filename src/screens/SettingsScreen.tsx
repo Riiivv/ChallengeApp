@@ -1,6 +1,5 @@
 // Imports React Native UI components
 import { Button, StyleSheet, Text, View } from "react-native";
-
 // Imports dark mode state and toggle function
 import { useThemeMode } from "../hooks/useThemeMode";
 

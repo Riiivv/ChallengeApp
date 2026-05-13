@@ -1,10 +1,9 @@
 // Imports AsyncStorage for local device storage
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
 // Imports the Challenge type/model
 import { Challenge } from "../types/Challenge";
-
 // Key/name used to store saved challenges
+
 const STORAGE_KEY = "saved_challenges";
 
 // Saves a challenge to AsyncStorage

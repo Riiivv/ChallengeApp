@@ -1,8 +1,6 @@
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
-
 // Imports local challenge data
 import { fallbackChallenges } from "../data/fallbackChallenges";
-
 // Imports dark mode state
 import { useThemeMode } from "../hooks/useThemeMode";
 

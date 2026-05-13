@@ -12,7 +12,7 @@ export const fallbackChallenges: Challenge[] = [
         id: "2",
         title: "Drink a glass of water",
         category: "health",
-    },
+},
     {
         id: "3",
         title: "Call a friend",

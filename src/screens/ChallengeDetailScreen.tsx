@@ -1,8 +1,6 @@
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
-
 // Imports function used to save a challenge
 import { saveChallenge } from "../storage/SavedChallenges";
-
 // Imports dark mode state
 import { useThemeMode } from "../hooks/useThemeMode";
 

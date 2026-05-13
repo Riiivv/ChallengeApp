@@ -2,17 +2,14 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 // Imports icons for the bottom tabs
 import { Ionicons } from "@expo/vector-icons";
-
 // Imports all screens used in navigation
 import HomeScreen from "../screens/HomeScreen";
 import ChallengesScreen from "../screens/ChallengesScreen";
 import SavedScreen from "../screens/SavedScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 import ChallengeDetailScreen from "../screens/ChallengeDetailScreen";
-
 // Imports dark mode state
 import { useThemeMode } from "../hooks/useThemeMode";
 

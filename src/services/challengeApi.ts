@@ -1,13 +1,11 @@
 // Imports the Challenge type/model
 import { Challenge } from "../types/Challenge";
-
 // Imports local fallback challenges in case the API fails
 import { fallbackChallenges } from "../data/fallbackChallenges";
-
 // API endpoint used to get random challenges
 const API_URL = "https://bored-api.appbrewery.com/random";
-
 // Async function that returns one Challenge object
+
 export async function getRandomChallenge(): Promise<Challenge> {
     try {
         // Sends a request to the API

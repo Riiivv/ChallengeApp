@@ -1,21 +1,13 @@
 // Imports React hooks
 import { useCallback, useState } from "react";
-
 // Imports React Native UI components
 import { Button, FlatList, StyleSheet, Text, View } from "react-native";
-
 // Runs code when this screen becomes active/focused
 import { useFocusEffect } from "@react-navigation/native";
-
 // Imports functions for loading and removing saved challenges
-import {
-    getSavedChallenges,
-    removeSavedChallenge,
-} from "../storage/SavedChallenges";
-
+import { getSavedChallenges, removeSavedChallenge, } from "../storage/SavedChallenges";
 // Imports the Challenge type/model
 import { Challenge } from "../types/Challenge";
-
 // Imports dark mode state
 import { useThemeMode } from "../hooks/useThemeMode";
 

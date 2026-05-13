@@ -2,17 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 // Imports React Native UI components
-import {
-    ActivityIndicator,
-    Alert,
-    Button,
-    Platform,
-    ScrollView,
-    StyleSheet,
-    Text,
-    useWindowDimensions,
-    View,
-} from "react-native";
+import { ActivityIndicator, Alert, Button, Platform, ScrollView, StyleSheet, Text, useWindowDimensions, View, } from "react-native";
 
 // Imports accelerometer sensor from Expo
 import { Accelerometer } from "expo-sensors";
@@ -42,8 +32,11 @@ export default function HomeScreen() {
     // Gets current dark mode value
     const { isDarkMode } = useThemeMode();
 
-    // Gets screen width for responsive layout
-    const { width } = useWindowDimensions();
+    // Gets screen width and height for responsive layout
+    const { width, height } = useWindowDimensions();
+
+    // Checks if the phone is in landscape mode
+    const isLandscape = width > height;
 
     // Checks if the screen is large, for example web/tablet
     const isLargeScreen = width > 700;
@@ -112,6 +105,7 @@ export default function HomeScreen() {
                 style={[
                     styles.card,
                     isLargeScreen && styles.largeCard,
+                    isLandscape && styles.landscapeCard,
                     isDarkMode && styles.darkCard,
                 ]}
             >
@@ -201,6 +195,11 @@ const styles = StyleSheet.create({
     // Larger card width for bigger screens
     largeCard: {
         maxWidth: 550,
+    },
+
+    // Wider layout for landscape mode
+    landscapeCard: {
+        maxWidth: 700,
     },
 
     title: {

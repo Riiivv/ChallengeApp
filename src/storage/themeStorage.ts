@@ -1,7 +1,7 @@
 // Imports AsyncStorage for local storage on the device
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
 // Key/name used to store the theme value
+
 const THEME_KEY = "theme_mode";
 
 // Saves dark mode as true or false
